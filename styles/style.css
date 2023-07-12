@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-button {
+  border-radius: 50rem;
+}
+
+.active {
+  border-bottom: 3px blue solid;
+}
+
+.post {
+  text-decoration: none;
+}
+
+a.nav-b-code {
+  position: relative;
+  z-index: 1;
+}
+
+a.nav-b-code::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  border-bottom: 3px solid blue;
+  transition: all 0.4s ease-in-out;
+  transform-origin: middle;
+  transform: scaleX(0);
+}
+
+a.nav-b-code:hover::before {
+  transform: scaleX(1);
+}
+
+a#login {
+  transition: all 0.4s ease-in-out;
+}
+
+a#login:hover {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2), 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+div.cont-img {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+img.image-view-edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.btn-forms {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 400px;
+  max-width: 400px;
+}
+
+div.btn-forms > form.act-forms {
+  margin: 0 10px;
+}
+
+div.btn-forms > form.act-forms > button {
+  margin: 0;
+}
+
+div.edit_my_profile {
+  height: 70vh;
+  display: flex;
+  padding: 0;
+}
+
+div.two_per_row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+div.gender_per_row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.gender_per_row > p {
+  margin-right: 20px;
+}
+div.gender_per_row > div {
+  display: flex;
+}
+div.gender_per_row > div > div {
+  padding: 0 10px;
+}
+
+div.left-part-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  border: 1px solid black;
+  box-shadow: -12px 7px 4px rgba(0, 0, 0, 0.3),
+    -10px 10px 2px rgba(0, 0, 0, 0.15);
+}
+div.right-part-profile {
+  border: 1px solid gray;
+  border-left: none;
+  box-shadow: 12px 7px 4px rgba(0, 0, 0, 0.3), 10px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+div.left-part-profile,
+div.right-part-profile {
+  width: 50%;
+  height: 100%;
+}
+
+div.padding-left-desc {
+  padding-left: 5px;
+}
+
+img.def_profile_img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+}

@@ -1,0 +1,43 @@
+div.about-dev {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+div > h1.title-sec {
+  text-align: center;
+  text-transform: uppercase;
+  animation: textDeveloper 1 linear 1s;
+}
+
+div.div-developer {
+  width: 300px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.2), 4px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+img.img-dev {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+div.social-media i {
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+@keyframes textDeveloper {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
